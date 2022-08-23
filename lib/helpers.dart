@@ -34,8 +34,6 @@ Future<File> get _localFileDeviceId async {
 
 Future<File> setDeviceIdToFile(String message) async {
   final file = await _localFileDeviceId;
-
-  // Write the file.
   return file.writeAsString(message);
 }
 
@@ -43,10 +41,8 @@ Future<String> readDeviceIdFromFile() async {
   try {
     final file = await _localFileDeviceId;
     String contents = await file.readAsString();
-
     return contents;
   } catch (e) {
-    // If encountering an error, return 0.
     return "";
   }
 }
