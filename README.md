@@ -3,6 +3,10 @@
 |<img src="/preview/preview1.png" width="300"/>|<img src="/preview/preview2.png" width="300"/>|
 |--|--|
 
+```
+path_provider: ^2.0.11
+```
+
 - helpers.dart
 ```dart
 import 'dart:io';
