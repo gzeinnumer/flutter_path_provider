@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
             ),
             ElevatedButton(
-                child: const Text("Get String To File"),
+                child: const Text("Get String From File"),
                 onPressed: () {
                   readDeviceId();
                 },
